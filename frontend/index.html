@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MultiPlayer Tron</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div id="initialScreen">
+    <div>
+        <h1>Multiplayer Tron</h1>
+        <button
+          type="submit"
+          class="btn btn-success"
+          id="newGameButton"
+        >
+          Create New Game
+        </button>
+        <div>OR</div>
+        <div>
+          <input type="text" placeholder="Enter Game Code" id="gameCodeInput"/>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-success"
+          id="joinGameButton"
+        >
+          Join Game
+        </button>
+    </div>
+  </div>
+
+  <div id="gameScreen">
+    <div>
+
+      <h1>Your game code is: <span id="gameCodeDisplay"></span></h1>
+
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

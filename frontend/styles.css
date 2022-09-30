@@ -1,0 +1,22 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+html {
+    background-image: url("bg.jpg");
+    background-size: 100%;
+}
+
+#initialScreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gameScreen {
+    display: none;
+}
